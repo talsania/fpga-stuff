@@ -43,11 +43,11 @@ Hexadecimal counter (0-F) displayed on a single 7-segment digit using switch inp
 **Encoding Example:**
 ```
 Input: 4'b0000 → Output: 8'b11000000 (segments A-F on, G off = "0")
-Input: 4'b0001 → Output: 8'b11111001 (segments B,C on = "1")
+Input: 4'b1111 → Output: 8'b10001110 (segments A,E,F,G on = "f")
 ```
 
-**1001 -> 9 demo:**  
-![PXL_20251208_104804990](https://github.com/user-attachments/assets/702e128e-571e-44be-afb9-2830ed9cb759)
+**0111 -> 7 demo:**
+![PXL_20251209_153947069 MP](https://github.com/user-attachments/assets/509f1ec5-7064-4fe5-aac9-09e8cc4c6426)
 
 ## Resources
 
