@@ -43,11 +43,11 @@ always @(*) begin
         4'b0100: SSEG_CA = 8'b10011001;
         4'b0101: SSEG_CA = 8'b10010010;
         4'b0110: SSEG_CA = 8'b10000010;
-        4'b0111: SSEG_CA = 8'b11011000;
+        4'b0111: SSEG_CA = 8'b11111000;
         4'b1000: SSEG_CA = 8'b10000000;
         4'b1001: SSEG_CA = 8'b10011000;
         4'b1010: SSEG_CA = 8'b10001000;
-        4'b1011: SSEG_CA = 8'b10000000;
+        4'b1011: SSEG_CA = 8'b10000011;
         4'b1100: SSEG_CA = 8'b11000110;
         4'b1101: SSEG_CA = 8'b10100001;
         4'b1110: SSEG_CA = 8'b10000110;
@@ -92,7 +92,7 @@ initial
 always @(posedge CLK) 
     begin 
         counter_out<=counter_out + 32'h00000001; 
-        if (counter_out>32'h00F5E100) 
+        if (counter_out>32'd100000) 
         begin
             counter_out<=32'h00000000; 
             clk_slow<=!clk_slow;
