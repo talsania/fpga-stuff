@@ -36,7 +36,7 @@ s0 (LED OFF) → s1 (waiting) → s2 (LED ON) → s3 (waiting) → s0
 **Sim screenshot:**  
 <img width="2390" height="394" alt="Screenshot 2025-12-06 220613" src="https://github.com/user-attachments/assets/1f5158d5-ee39-4591-ab83-1d2e72d07b99" />
 
-### 03 - 7-Segment Display Counter
+### 03 - 7-Segment Display using Time-Multiplexing
 
 Hexadecimal counter (0-F) displayed on a single 7-segment digit using switch inputs using combinational logic for segment encoding and time-division multiplexing for multi-digit scanning.
 
